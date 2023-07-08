@@ -95,7 +95,7 @@ main section ul li a {
 
 #fotos{
     height: 80vh;
-    background-color: #ffffff;
+    background-color: #252525;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,13 +117,16 @@ main section ul li a {
 	/* width: px; */
     /* height: auto; */
 	margin:50px auto 0;
+    width: 250px;
+    /* padding: 50px; */
 	overflow: hidden;
+
 }
 
 .slider-frame ul {
 	display: flex;
 	padding: 0;
-	width: 400%;
+	width: 1200%;
 	animation: slide 20s infinite alternate ease-in-out;
 }
 
@@ -134,9 +137,10 @@ main section ul li a {
 
 .slider-frame img {
 	width: 100%;
+    border-radius: 1rem;
 }
 
-@keyframes slide {
+/* @keyframes slide {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
 	
@@ -148,7 +152,31 @@ main section ul li a {
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
-}
+} */
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	10% {margin-left: 0;}
+	
+	15% {margin-left: -100%;}
+	25% {margin-left: -100%;}
+	
+	30% {margin-left: -200%;}
+	40% {margin-left: -200%;}
+	
+	45% {margin-left: -300%;}
+	55% {margin-left: -300%;}
+
+    60% {margin-left: -400%;}
+	70% {margin-left: -400%;}
+	
+	75% {margin-left: -500%;}
+	85% {margin-left: -500%;}
+	
+	90% {margin-left: -600%;}
+	100% {margin-left: -600%;}
+
+} 
 
 img{
     height: 300px;
