@@ -126,7 +126,7 @@ main section ul li a {
 .slider-frame ul {
 	display: flex;
 	padding: 0;
-	width: 1200%;
+	width: 1200%; /*seran 1200% porque hay 12 fotos en total, pero solo se muestran 7*/
 	animation: slide 20s infinite alternate ease-in-out;
 }
 
@@ -155,6 +155,8 @@ main section ul li a {
 } */
 
 @keyframes slide {
+
+    /* se ve hasta la 7 porque cada par equivale a una foto.  */
 	0% {margin-left: 0;}
 	10% {margin-left: 0;}
 	
